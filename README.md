@@ -52,3 +52,26 @@ The browser uses Roblox-compatible community proxy endpoints (`users.roproxy.com
 - Only publish members' introductions and profiles with their permission.
 - This site is not yet deployed. Publishing requires access to your GitHub account.
 - The site is a community project, not affiliated with Roblox Corporation.
+
+## Official medals and achievements
+
+The Medals page includes all 15 official Lumber News medals, using built-in gold icons.
+Edit the `medals` catalog in `data.js` to adjust descriptions. The original seven medals without supplied requirements have clearly marked placeholder criteria.
+
+To award a medal, find a member in `data.js` and change `medals:[]` to, for example:
+
+```js
+medals:[
+  {id:'excellence',date:'2026-11-17',reason:'Consistently excellent weekly recaps'},
+  {id:'knowledge',date:'2026-11-17',reason:'Scored 96% on the Knowledge Check'}
+]
+```
+
+Available IDs: `honor`, `leadership`, `journalism`, `veterancy`, `veterancy2`, `knowledge`, `perfect`, `excellence`, `innovation`, `service`, `teamwork`, `dedication`, `impact`, `mentorship`, `legacy`.
+
+Medals appear on the team hierarchy and journalist profile cards. Each medal's detail panel lists recipients and optional dates/reasons. Duplicate entries are supported for repeat awards. This is a static site: Discord `/medal award` commands do **not** automatically sync to the website.
+
+Upload all changed files (`index.html`, `data.js`, `style.css`, `medals.js`, `README.md`) to your repository root, preserving the existing `script.js` and `avatar-placeholder.svg`.
+
+## Roster update (November 2026)
+The roster now includes Gomi and Fartsona as deputy managers, Penqui as manager, Cookies as trial manager, and 11 journalists across three ranks. Sirfated is marked on hiatus. Department Head remains a placeholder. Only the two deputy managers have a confirmed reporting link to the department head; all other reporting links are intentionally unassigned. Update `reportsTo` in `data.js` when you know each person’s supervisor. All medals remain unawarded. Roblox usernames are assumed from display names except Mario (`Fartius3000`) and fede (`70_99`); verify those usernames for accurate avatars.

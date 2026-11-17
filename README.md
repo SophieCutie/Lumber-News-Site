@@ -75,3 +75,7 @@ Upload all changed files (`index.html`, `data.js`, `style.css`, `medals.js`, `RE
 
 ## Roster update (November 2026)
 The roster now includes Gomi and Fartsona as deputy managers, Penqui as manager, Cookies as trial manager, and 11 journalists across three ranks. Sirfated is marked on hiatus. Department Head remains a placeholder. Only the two deputy managers have a confirmed reporting link to the department head; all other reporting links are intentionally unassigned. Update `reportsTo` in `data.js` when you know each person’s supervisor. All medals remain unawarded. Roblox usernames are assumed from display names except Mario (`Fartius3000`) and fede (`70_99`); verify those usernames for accurate avatars.
+
+
+## Rank-based hierarchy update
+The organization chart now connects Department Head → both Deputy Managers → Manager → Trial Manager → Journalist rank → Junior Journalist rank → Trainee Journalist rank. Both deputies jointly supervise Penqui. This is a rank-based display rather than the old single-supervisor `reportsTo` tree. To change members, edit `data.js`; the chart updates by `rank`. On narrow screens, scroll the chart sideways.

@@ -24,7 +24,7 @@ window.LUMBER_NEWS_DATA = {
   ],
   members: [
     // Assign reportsTo to the relevant manager/deputy ID once reporting lines are confirmed.
-    {id:"head",name:"Department Head",username:"",rank:"Department Head",tier:"head",medals:[],reportsTo:null,bio:"Welcome to Lumber News! Meet the team behind our community reporting.",joined:''},
+    {id:"head",name:"omgitsmeejon",username:"omgitsmeejon",rank:"Department Head",tier:"head",medals:[],reportsTo:null,bio:"Welcome to Lumber News! Meet the team behind our community reporting.",joined:''},
     {id:"gomi",name:"Gomi",username:"Gomi",rank:"Deputy Manager",tier:"deputy",medals:[],reportsTo:"head",bio:"Introduction coming soon \u2014 this member can supply their own welcome message.",joined:''},
     {id:"fartsona",name:"Fartsona",username:"Fartsona",rank:"Deputy Manager",tier:"deputy",medals:[],reportsTo:"head",bio:"Introduction coming soon \u2014 this member can supply their own welcome message.",joined:''},
     {id:"penqui",name:"Penqui",username:"Penqui",rank:"Manager",tier:"manager",medals:[],reportsTo:null,bio:"Introduction coming soon \u2014 this member can supply their own welcome message.",joined:''},
@@ -36,7 +36,7 @@ window.LUMBER_NEWS_DATA = {
     {id:"sirfated",name:"Sirfated",username:"Sirfated",rank:"Junior Journalist",tier:"journalist",medals:[],reportsTo:null,bio:"Introduction coming soon \u2014 this member can supply their own welcome message.",joined:'',status:'Hiatus'},
     {id:"mario",name:"Mario",username:"Fartius3000",rank:"Junior Journalist",tier:"journalist",medals:[],reportsTo:null,bio:"Introduction coming soon \u2014 this member can supply their own welcome message.",joined:''},
     {id:"barrynew3",name:"BarryNew3",username:"BarryNew3",rank:"Junior Journalist",tier:"journalist",medals:[],reportsTo:null,bio:"Introduction coming soon \u2014 this member can supply their own welcome message.",joined:''},
-    {id:"blue_lumbernoob",name:"Blue_LumberNoob",username:"Blue_LumberNoob",rank:"Trainee Journalist",tier:"journalist",medals:[],reportsTo:null,bio:"Introduction coming soon \u2014 this member can supply their own welcome message.",joined:''},
+    {id:"blue_lumbernoob",name:"Blue_LumberNoob",username:"Blue_LumberNoob",rank:"Journalist",tier:"journalist",medals:[],reportsTo:null,bio:"Introduction coming soon \u2014 this member can supply their own welcome message.",joined:''},
     {id:"fede",name:"fede",username:"70_99",rank:"Trainee Journalist",tier:"journalist",medals:[],reportsTo:null,bio:"Introduction coming soon \u2014 this member can supply their own welcome message.",joined:''},
     {id:"notthatgood0fadev",name:"NotThatGood0fADev",username:"NotThatGood0fADev",rank:"Trainee Journalist",tier:"journalist",medals:[],reportsTo:null,bio:"Introduction coming soon \u2014 this member can supply their own welcome message.",joined:''},
     {id:"yellobello9005",name:"yellobello9005",username:"yellobello9005",rank:"Trainee Journalist",tier:"journalist",medals:[],reportsTo:null,bio:"Introduction coming soon \u2014 this member can supply their own welcome message.",joined:''}

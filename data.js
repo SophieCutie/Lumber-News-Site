@@ -1,7 +1,7 @@
 /* EDIT THIS FILE to customize your website. No programming required for most changes.
  * Set username to the person's real Roblox username to load their avatar.
  * Keep id unique for every member; set reportsTo to their supervisor's id.
- * Use a real https:// URL for articles and social accounts to enable the link.
+ * Published items are loaded from publications.js. Set verified social URLs below.
  */
 window.LUMBER_NEWS_DATA = {
   // Official award catalog. Medal IDs below are used in each member's medals list.
@@ -41,11 +41,7 @@ window.LUMBER_NEWS_DATA = {
     {id:"notthatgood0fadev",name:"NotThatGood0fADev",username:"NotThatGood0fADev",rank:"Trainee Journalist",tier:"journalist",medals:[],reportsTo:null,bio:"Introduction coming soon \u2014 this member can supply their own welcome message.",joined:''},
     {id:"yellobello9005",name:"yellobello9005",username:"yellobello9005",rank:"Trainee Journalist",tier:"journalist",medals:[],reportsTo:null,bio:"Introduction coming soon \u2014 this member can supply their own welcome message.",joined:''}
   ],
-  articles: [
-    {number:178,title:'Weekly Recap #178',category:'Weekly Recap',date:'2026-11-15',author:'Lumber News Team',summary:'Your latest community news, celebrations, and highlights. Replace this example with the real recap.',url:''},
-    {number:177,title:'Weekly Recap #177',category:'Weekly Recap',date:'2026-11-08',author:'Lumber News Team',summary:'An example entry for the weekly recap archive. Add the published Google Docs URL.',url:''},
-    {number:93,title:'Community Interview #93',category:'Interview',date:'2026-11-01',author:'Lumber News Team',summary:'A placeholder for an interview with a community member.',url:''}
-  ],
+  articles: window.LUMBER_NEWS_PUBLICATIONS || [],
   social: [
     {name:'Discord',symbol:'◈',description:'Join the LT2 Fan Group community and stay up to date.',url:''},
     {name:'Roblox Group',symbol:'◆',description:'Visit the official LT2 Fan Group on Roblox.',url:''},

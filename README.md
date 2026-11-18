@@ -8,7 +8,7 @@ Open `index.html` in a browser. The site requires an internet connection to load
 
 ## Edit your website
 
-Open `data.js` in a text editor. This is the only file you normally need to change.
+Open `data.js` to edit members, medals, and social links. The publication archive is in `publications.js`.
 
 ### Members
 
@@ -27,7 +27,9 @@ Add or remove member objects in the `members` array, keeping commas between obje
 
 ### Articles
 
-Edit the `articles` array. Set `url` to the publicly shareable article link (for example, a Google Doc link). Blank URLs display “Coming soon.” The archive automatically sorts by date and supports searching and category filtering.
+The `publications.js` file contains 268 verified publication posts from the Lumber News HQ channel: 184 articles and 84 interviews. Each entry contains its category, issue number and title when stated, journalist when credited, Discord post date, HQ message link, and a Google Docs link if one was present. Add future publications to the `window.LUMBER_NEWS_PUBLICATIONS` array using the same fields. The archive sorts by date, supports search and category filtering, and shows 24 results at a time.
+
+The HQ channel is a mirror. Original main-server message links were unavailable, so the website opens the HQ post. Dates are UTC Discord post dates. Some early editions did not state a number or title; those fields remain blank. The source CSV and JSON are separate from this website package for review and future updates.
 
 ### Social media
 
@@ -36,7 +38,7 @@ Edit the `social` array with verified LT2 Fan Group URLs. Blank URLs display “
 ## Publish on GitHub Pages
 
 1. Create a new public GitHub repository, for example `lumber-news`.
-2. Upload all files **inside** this folder to the repository root (`index.html`, `style.css`, `script.js`, `data.js`, `avatar-placeholder.svg`).
+2. Upload all files **inside** this folder to the repository root (`index.html`, `style.css`, `script.js`, `data.js`, `publications.js`, `medals.js`, `avatar-placeholder.svg`).
 3. Go to **Settings → Pages**.
 4. Under **Build and deployment**, choose **Deploy from a branch**, then `main` and `/(root)`, and save.
 5. GitHub will provide your published URL, usually `https://YOUR-USERNAME.github.io/lumber-news/`.
@@ -48,7 +50,7 @@ The browser uses Roblox-compatible community proxy endpoints (`users.roproxy.com
 
 ## Notes
 
-- The sample roster, dates, article titles, descriptions and links are placeholders, not verified department records.
+- Publication entries come from accessible HQ messages. Team roster and social placeholders should be reviewed separately.
 - Only publish members' introductions and profiles with their permission.
 - This site is not yet deployed. Publishing requires access to your GitHub account.
 - The site is a community project, not affiliated with Roblox Corporation.

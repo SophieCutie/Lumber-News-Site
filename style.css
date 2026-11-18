@@ -23,3 +23,5 @@
 .org-level-title{margin-bottom:22px}
 .org-chart .person-card{box-shadow:0 6px 24px #0004}
 @media(max-width:650px){.org-chart{min-width:max-content;padding:6px 20px 20px}.org-level-members{gap:12px}.org-level-members>.person-card{flex-basis:170px;width:170px}.org-level-members:has(>.person-card:nth-child(2))::before{left:85px;right:85px}.org-level .person-card{min-height:160px}}
+
+.article-links{display:flex;gap:9px;flex-wrap:wrap;justify-content:flex-end}.article-link-secondary{background:transparent;color:var(--gold);border:1px solid var(--gold)}.archive-more{display:block;margin:24px auto 0;background:var(--surface2);color:var(--gold);border:1px solid var(--gold);border-radius:5px;padding:12px 20px;font-weight:700}.archive-more[hidden]{display:none}.archive-note{max-width:760px;margin:22px auto 0;color:var(--muted);font-size:12px;text-align:center}@media(max-width:560px){.article-links{justify-content:flex-start}}

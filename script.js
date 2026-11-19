@@ -35,7 +35,7 @@ function renderArticles(){
   const cat=select.value;
   const list=$('#article-list');
   const filtered=articles.filter(a=>(cat==='all'||a.category===cat)&&
-    [a.title,a.author,a.category,a.number,a.date].join(' ').toLowerCase().includes(q));
+    [a.title,a.author,a.category,a.number,a.date,a.body].join(' ').toLowerCase().includes(q));
   list.replaceChildren();
   if(!filtered.length){list.append(el('p','empty','No publications match your search.'));more.hidden=true;return}
   filtered.slice(0,shown).forEach(a=>{
@@ -47,12 +47,15 @@ function renderArticles(){
     if(a.author)meta.append(el('span','',a.author));
     meta.append(el('span','',a.date));
     left.append(meta);
-    const links=el('div','article-links');
-    const source=safeUrl(a.url);
-    if(source){const link=el('a','article-link','View HQ post ↗');link.href=source;link.target='_blank';link.rel='noopener noreferrer';links.append(link)}
-    const doc=safeUrl(a.googleDocsUrl);
-    if(doc){const link=el('a','article-link article-link-secondary','Google Doc ↗');link.href=doc;link.target='_blank';link.rel='noopener noreferrer';links.append(link)}
-    card.append(left,links);list.append(card);
+    const reader=el('details','publication-reader');
+    reader.append(el('summary','article-link','Read publication'));
+    const body=el('div','publication-body');
+    // Keep the published wording; remove Discord formatting markers for easier reading.
+    body.textContent=(a.body||'Publication text unavailable.')
+      .replace(/<(?:a)?:([\w-]+):\d+>/g,':$1:')
+      .replace(/\*\*|__/g,'');
+    reader.append(body);
+    card.append(left,reader);list.append(card);
   });
   more.hidden=filtered.length<=shown;
   if(!more.hidden)more.textContent='Show more publications ('+(filtered.length-shown)+' remaining)';

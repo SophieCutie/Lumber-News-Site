@@ -81,3 +81,7 @@ The roster now includes Gomi and Fartsona as deputy managers, Penqui as manager,
 
 ## Rank-based hierarchy update
 The organization chart now connects Department Head → both Deputy Managers → Manager → Trial Manager → Journalist rank → Junior Journalist rank → Trainee Journalist rank. Both deputies jointly supervise Penqui. This is a rank-based display rather than the old single-supervisor `reportsTo` tree. To change members, edit `data.js`; the chart updates by `rank`. On narrow screens, scroll the chart sideways.
+
+## In-page archive text
+
+All 268 catalog entries include their exported Lumber News HQ message text. The archive cards use an expandable in-page reader and search includes publication text. The HQ source URL remains in the local catalog metadata for provenance but is not linked on the page. The export contains message text; external documents and attachments were not fetched.
